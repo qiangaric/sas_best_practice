@@ -1,0 +1,19 @@
+/* get the last one row */
+  
+  data test_06_26();
+ set students end = final;
+ if final;
+ run;
+
+
+proc print;
+  run;
+
+
+/* get range num */
+data temp1;
+set sashelp.air(firstobs=9 obs=11);
+run;
+
+proc print;
+run;
